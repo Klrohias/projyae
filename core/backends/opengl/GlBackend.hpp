@@ -12,6 +12,9 @@ namespace ProjYae
     class GLBackend : public IRenderBackend
     {
     public:
+        static void initGlobal(void* getProcAddr);
+
+        void draw();
     };
 }
 
