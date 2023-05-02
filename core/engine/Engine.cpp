@@ -16,11 +16,11 @@ namespace ProjYae {
     void Engine::init() {
     }
 
-    RenderBackend *Engine::getRenderBackend() const {
+    IRenderBackend *Engine::getRenderBackend() const {
         return _renderBackend;
     }
 
-    void Engine::setRenderBackend(RenderBackend *backend) {
+    void Engine::setRenderBackend(IRenderBackend *backend) {
         _renderBackend = backend;
     }
 } // ProjYae

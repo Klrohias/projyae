@@ -5,7 +5,7 @@
 #ifndef PROJYAE_METALBACKEND_H
 #define PROJYAE_METALBACKEND_H
 
-#include "../RenderBackend.h"
+#include "../IRenderBackend.h"
 
 #include "../../utilities.h"
 
@@ -35,7 +35,7 @@ namespace ProjYae {
 #endif
 
 namespace ProjYae {
-    class MetalBackend : public RenderBackend {
+    class MetalBackend : public IRenderBackend {
         __OBJC_TYPE_PTR(NSWindow)_window = __OBJC_NIL;
         __OBJC_ID(MTLDevice) _device = __OBJC_NIL;
         __OBJC_ID(MTLCommandQueue) _queue = __OBJC_NIL;
