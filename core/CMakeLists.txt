@@ -18,8 +18,11 @@ endif()
 add_library(ProjYae ${PLATFORM_SOURCE} engine/Engine.cpp backends/IRenderBackend.cpp)
 
 if (PROJYAE_DARWIN)
-    target_link_libraries(ProjYae stdc++ "-framework Foundation" "-framework Cocoa" "-framework MetalKit" objc)
-    set_target_properties(ProjYae PROPERTIES LINK_FLAGS "-Wl,-F/Library/Frameworks")
+    target_link_libraries(ProjYae PRIVATE
+            "-framework Foundation"
+            "-framework QuartzCore"
+            "-framework Metal"
+            "-framework MetalKit")
 else()
     target_link_libraries(ProjYae PRIVATE glad::glad)
 endif()
