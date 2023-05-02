@@ -1,0 +1,10 @@
+# IDEs
+.vs/
+*.iml
+.idea/
+.history/
+.vscode/
+
+# Build cache
+build-*/
+cmake-build*/
