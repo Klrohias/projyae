@@ -5,10 +5,10 @@
 #include <iostream>
 #include <GLFW/glfw3.h>
 #include <core/engine/Engine.h>
-#include <core/backends/opengl/GlBackend.hpp>
+#include <core/render/opengl/GlBackend.hpp>
 
 int main() {
-    std::cout << "ProjYae Player (Win32 + glfw) built at " << __TIMESTAMP__ << " \n";
+    std::cout << "ProjYae Desktop (Win32 + glfw) built at " << __TIMESTAMP__ << " \n";
 
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);

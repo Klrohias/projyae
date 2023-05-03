@@ -17,4 +17,6 @@
 #define __OBJC_NIL nullptr
 #endif
 
+#define __UNUSED_PTR(x) (void*)(x)
+
 #endif //PROJYAE_UTILITIES_H

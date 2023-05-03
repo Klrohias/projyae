@@ -5,7 +5,7 @@
 #ifndef PROJYAE_ENGINE_H
 #define PROJYAE_ENGINE_H
 
-#include "../backends/IRenderBackend.h"
+#include "../render/IRenderBackend.h"
 
 namespace ProjYae {
 
@@ -15,9 +15,9 @@ namespace ProjYae {
 
         void notifyNextFrame();
 
-        [[nodiscard]] IRenderBackend* getRenderBackend() const;
+        [[nodiscard]] IRenderBackend *getRenderBackend() const;
 
-        void setRenderBackend(IRenderBackend* backend);
+        void setRenderBackend(IRenderBackend *backend);
 
     private:
         IRenderBackend *_renderBackend = nullptr;

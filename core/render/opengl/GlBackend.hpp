@@ -5,7 +5,7 @@
 #ifndef PROJYAE_GLBACKEND_HPP
 #define PROJYAE_GLBACKEND_HPP
 
-#include "../IRenderBackend.h"
+#include "core/render/IRenderBackend.h"
 
 namespace ProjYae
 {

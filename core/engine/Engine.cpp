@@ -6,7 +6,7 @@
 #include <exception>
 
 #if defined(PROJYAE_METAL_ENABLE)
-#include "../backends/metal/MetalBackend.h"
+#include "../render/metal/MetalBackend.h"
 #endif
 
 namespace ProjYae {

@@ -10,7 +10,7 @@
 #include <GLFW/glfw3native.h>
 
 #include <iostream>
-#include <core/backends/metal/MetalBackend.h>
+#include <core/render/metal/MetalBackend.h>
 #include <core/engine/Engine.h>
 
 
