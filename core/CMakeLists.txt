@@ -17,7 +17,7 @@ find_package(Stb REQUIRED)
 
 # Build
 add_library(ProjYae ${PLATFORM_SOURCE} engine/Engine.cpp render/IRenderBackend.cpp audio/miniaudio.c audio/miniaudio.h
-        audio/AudioPlayer.cpp audio/AudioPlayer.h audio/IAudioStream.cpp audio/IAudioStream.h audio/drlibs.h audio/drlibs.c audio/stbvorbis.c audio/stbvorbis.h)
+        audio/AudioPlayer.cpp audio/AudioPlayer.h audio/IAudioStream.cpp audio/IAudioStream.h audio/drlibs.h audio/drlibs.c audio/stbvorbis.c audio/stbvorbis.h audio/WavAudioStream.cpp audio/WavAudioStream.h)
 
 # Link
 target_include_directories(ProjYae PRIVATE ${MINIAUDIO_INCLUDE_DIRS})

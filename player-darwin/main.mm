@@ -13,6 +13,8 @@
 #include <core/render/metal/MetalBackend.h>
 #include <core/engine/Engine.h>
 
+#include <core/audio/AudioPlayer.h>
+#include <core/audio/WavAudioStream.h>
 
 int main() {
     std::cout << "ProjYae Player (macOS + glfw) built at " << __TIMESTAMP__ << " \n";
@@ -26,7 +28,6 @@ int main() {
     auto metalBackend = ProjYae::MetalBackend();
     metalBackend.init();
     metalBackend.attachGlfwWindow(cocoaWindow);
-
 
     auto engine = ProjYae::Engine();
     engine.init();

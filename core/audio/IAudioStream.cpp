@@ -13,7 +13,7 @@ namespace ProjYae {
         return 0;
     }
 
-    long IAudioStream::getSampleCount() {
+    uint64_t IAudioStream::getSampleCount() {
         return 0;
     }
 

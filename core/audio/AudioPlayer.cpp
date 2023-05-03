@@ -58,6 +58,7 @@ namespace ProjYae {
             return;
         }
         _playing = true;
+        ma_device_start(_device);
     }
 
     AudioPlayer::AudioPlayer() {

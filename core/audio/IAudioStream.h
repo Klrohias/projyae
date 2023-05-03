@@ -6,6 +6,7 @@
 #define PROJYAE_IAUDIOSTREAM_H
 
 #include "miniaudio.h"
+#include <unistd.h>
 
 namespace ProjYae {
 
@@ -13,7 +14,7 @@ namespace ProjYae {
     public:
         virtual ma_format getSampleFormat();
         virtual int getChannelCount();
-        virtual long getSampleCount();
+        virtual uint64_t getSampleCount();
         virtual int getSampleRate();
         virtual void read(ma_device* device, void* buffer, ma_uint32 frames);
     };
