@@ -6,7 +6,7 @@
 #define PROJYAE_IAUDIOSTREAM_H
 
 #include "miniaudio.h"
-#include <unistd.h>
+#include <cstdint>
 
 namespace ProjYae {
 
