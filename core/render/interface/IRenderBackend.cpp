@@ -9,4 +9,9 @@ namespace ProjYae {
 
     void IRenderBackend::init() {
     }
+
+    std::unique_ptr<ICommandBuffer> IRenderBackend::getCommandBuffer()
+    {
+        return nullptr;
+    }
 } // ProjYae

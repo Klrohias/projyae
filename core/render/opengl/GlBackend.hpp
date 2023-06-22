@@ -5,16 +5,24 @@
 #ifndef PROJYAE_GLBACKEND_HPP
 #define PROJYAE_GLBACKEND_HPP
 
-#include "core/render/IRenderBackend.h"
+#include <mutex>
+#include "core/render/interface/IRenderBackend.h"
+#include "SharedCommandBuffer.h"
 
 namespace ProjYae
 {
-    class GLBackend : public IRenderBackend
+    class GlBackend : public IRenderBackend
     {
+        SharedCommandBuffer _sharedCommandBuffer;
     public:
-        static void initGlobal(void* getProcAddr);
+        static void setupGl(void* getProcAddr);
 
         void draw();
+
+        std::unique_ptr<ICommandBuffer> getCommandBuffer() override;
+
+    private:
+        void executeCommand(const GlRenderCommand& renderCommand);
     };
 }
 

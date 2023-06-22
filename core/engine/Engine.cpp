@@ -3,7 +3,6 @@
 //
 
 #include "Engine.h"
-#include <exception>
 
 #if defined(PROJYAE_METAL_ENABLE)
 #include "../render/metal/MetalBackend.h"
